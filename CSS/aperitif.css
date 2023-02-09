@@ -1,0 +1,307 @@
+:root {
+    font-size: 62.5%;
+    --primary-white: #f8f8f8;
+    --primary-black: #111111;
+    --secondary-yellow: #E6C65D;
+    --secondary-green: #9FB063;
+    --secondary-brown: #685353;
+    --secondary-grey: #D9D9D9;
+    --font-family-titre: "Concert One", cursive;
+    --font-family-texte: "Lato", sans-empattement;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+p {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+    font-family: var(--font-family-texte);
+}
+
+a {
+    font-family: var(--font-family-texte);
+    font-size: 2.4rem;
+}
+
+.b:hover {
+    opacity: 50%;
+}
+
+
+.logo {
+    width: 96px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    width: 409px;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.icones img {
+    display: block;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 89px;
+    padding: 20px 30px;
+    width: 100%;
+    height: 136px;
+    background: #E6C65D;
+    font-family: var(--font-family-texte);
+}
+
+header {
+    width: 100%;
+
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 3%;
+}
+
+.bouton {
+
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.bouton-hover {
+    background-color: #acabab;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.retour {
+    background-color: #E6C65D;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.retour img {
+    width: 50px;
+}
+
+h1 {
+    font-family: var(--font-family-titre);
+    font-size: 7rem;
+    padding-top: 8%;
+}
+
+.titre {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/illustration-aperitif.png);
+    background-repeat: no-repeat;
+    background-position: left 40% bottom 68%;
+    background-size: 5%;
+
+}
+
+main {
+    font-family: var(--font-family-texte);
+    font-size: var(--font-size);
+    max-width: 70vw;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
+}
+
+.cocktail {
+    width: 80%;
+    max-height: 90vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-texte);
+    font-size: var(--font-size);
+    width: 100%;
+}
+
+footer {
+    padding: 2rem;
+    background: var(--secondary-green);
+}
+
+footer,
+.infos-footer,
+.liens-icones-footer,
+.icones-footer,
+.liens-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    font-family: var(--font-family-texte);
+}
+
+.liens-icones-footer {
+    gap: 10rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+}
+
+footer a {
+    color: var(--secondary-brown);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 393px) {
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 3px;
+        height: auto;
+    }
+
+    .b {
+        width: 45px;
+        height: auto;
+    }
+
+    .c {
+        width: 70px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .icones {
+        margin-top: 50px;
+    }
+
+    header {
+        background-size: 200px;
+        background-position: right 25% bottom 20%;
+        height: 20vh;
+    }
+
+    .titre {
+        background-size: 12%;
+        background-position: left 28% top 85%;
+        height: 20vh;
+        padding-top: 20%;
+
+    }
+
+    .table {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding-top: 15%;
+    }
+
+    .bouton {
+        border-radius: 5px;
+        height: 25px;
+        padding: 0px 30px;
+        justify-content: center;
+    }
+
+    .bouton-hover {
+        border-radius: 5px;
+        height: 25px;
+        padding: 0px 30px;
+        justify-content: center;
+    }
+
+    .retour {
+        border-radius: 5px;
+        height: 25px;
+        padding: 0px 20px;
+        justify-content: center;
+    }
+
+    .retour img {
+        width: 40px;
+    }
+
+
+    main {
+        display: block;
+        padding-top: 50%;
+        max-width: 70vw;
+        height: 70vh;
+    }
+
+    .champagne,
+    .fruit,
+    .fruit2,
+    .gin {
+        font-size: 1.2rem;
+    }
+
+    .cocktail img {
+        width: 70%;
+        padding-top: 20%;
+    }
+
+    .cocktail {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .infos-footer {
+        display: none;
+    }
+
+    .liens-footer {
+        font-size: 1.3rem;
+
+    }
+
+    .liens-icones-footer {
+        gap: 2.5rem;
+    }
+}

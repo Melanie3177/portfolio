@@ -1,0 +1,393 @@
+:root {
+    font-size: 62.5%;
+    --primary-white: #f8f8f8;
+    --primary-black: #111111;
+    --secondary-yellow: #E6C65D;
+    --secondary-green: #9FB063;
+    --secondary-brown: #685353;
+    --secondary-grey: #D9D9D9;
+    --secondary-grey-avatar: #999999;
+    --font-family-titre: "Concert One", cursive;
+    --font-family-texte: "Lato", sans-empattement;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+p {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+    font-family: var(--font-family-texte);
+}
+
+a {
+    font-family: var(--font-family-texte);
+    font-size: 2.4rem;
+}
+
+.b:hover {
+    opacity: 50%;
+}
+
+
+.logo {
+    width: 96px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    width: 409px;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.icones img {
+    display: block;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 89px;
+    padding: 20px 30px;
+    width: 100%;
+    height: 136px;
+    background: #E6C65D;
+    font-family: var(--font-family-texte);
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/feuille.svg);
+    background-repeat: no-repeat;
+    background-position: right 45% bottom 36%;
+    background-size: 20%;
+}
+
+h1 {
+    font-family: var(--font-family-titre);
+    font-size: 7rem;
+}
+
+.texte1 {
+    font-weight: bold;
+}
+
+/* plat */
+
+.plat {
+    max-width: 80vw;
+    margin: auto;
+    background: no-repeat url(../images/fleche-droite.svg);
+    background-position: right bottom;
+}
+
+.plat p {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.plat-resto {
+    width: 70%;
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* ecologie */
+
+.ecologie {
+    max-width: 80vw;
+    margin: auto;
+    background: no-repeat url(../images/fleche-gauche.svg);
+    background-position: left bottom;
+    margin-top: 10%;
+
+}
+
+.ecologie p {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.terre {
+    width: 70%;
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    margin-left: auto;
+}
+
+/* concert */
+
+.concert {
+    max-width: 80vw;
+    margin: auto;
+    background: no-repeat url(../images/fleche-droite.svg);
+    background-position: right bottom;
+    margin-top: 10%;
+}
+
+.concert p {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.concert-image {
+    width: 70%;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* partenaires */
+
+.partenaires {
+    margin-top: 10%;
+}
+
+.partenaires p {
+    text-align: left;
+    margin-left: 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+    font-family: var(--font-family-texte);
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+/* agriculteurs */
+
+.agriculteurs {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family-texte);
+    font-size: 2.4rem;
+}
+
+.lien {
+    color: var(--secondary-green);
+    margin-top: 5%;
+}
+
+.elevage {
+    color: var(--secondary-grey-avatar);
+    margin: 0;
+}
+
+.eleveur1 {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eleveur2 {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.condition {
+    max-width: 80vw;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+footer {
+    padding: 2rem;
+    background: var(--secondary-green);
+}
+
+footer,
+.infos-footer,
+.liens-icones-footer,
+.icones-footer,
+.liens-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    font-family: var(--font-family-texte);
+}
+
+.liens-icones-footer {
+    gap: 10rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+}
+
+footer a {
+    color: var(--secondary-brown);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 393px) {
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 3px;
+        height: auto;
+    }
+
+    .b {
+        width: 45px;
+        height: auto;
+    }
+
+    .c {
+        width: 70px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .icones {
+        margin-top: 50px;
+    }
+
+    header {
+        background-size: 200px;
+        background-position: right 35% bottom 20%;
+        height: 20vh;
+    }
+
+    .plat {
+        max-width: 90vw;
+        margin: 5%;
+        height: 33vh;
+        margin-right: 0;
+        background-size: 9%;
+        background-position: bottom 28% right 7%;
+    }
+
+    .plat p {
+        margin-right: 0;
+    }
+
+    .plat-resto {
+        margin-top: 7%;
+    }
+
+
+
+    .ecologie {
+        max-width: 90vw;
+        margin: 5%;
+        height: 40vh;
+        margin-right: 0;
+        background-size: 9%;
+        background-position: bottom 15% left 7%;
+    }
+
+    .ecologie p {
+        margin-left: 0;
+    }
+
+    .terre {
+        margin-top: 10%;
+    }
+
+
+
+    .concert {
+        max-width: 90vw;
+        margin: 5%;
+        height: 40vh;
+        margin-right: 0;
+        background-size: 9%;
+        background-position: bottom 39% right 7%;
+    }
+
+    .concert p {
+        margin-right: 0;
+        margin-top: 10%;
+    }
+
+    .concert-image {
+        margin-top: 2%;
+    }
+
+    .partenaires p {
+        margin-left: 5%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .avatar img {
+        width: 25vw;
+    }
+
+    .avatar {
+        font-size: 1.3rem;
+    }
+
+    .avatar.julien {
+        margin-top: 60%;
+    }
+
+    .condition {
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+
+    .infos-footer {
+        display: none;
+    }
+
+    .liens-footer {
+        font-size: 1.3rem;
+
+    }
+
+    .liens-icones-footer {
+        gap: 2.5rem;
+    }
+}

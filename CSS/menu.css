@@ -1,0 +1,205 @@
+:root {
+    font-size: 62.5%;
+    --primary-white: #f8f8f8;
+    --primary-black: #111111;
+    --secondary-yellow: #E6C65D;
+    --secondary-green: #9FB063;
+    --secondary-brown: #685353;
+    --font-family-titre: "Concert One", cursive;
+    --font-family-texte: "Lato", sans-empattement;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+p {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+}
+
+a {
+    font-family: var(--font-family-texte);
+    font-size: 2.4rem;
+}
+
+.b:hover {
+    opacity: 50%;
+}
+
+
+.logo {
+    width: 96px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    width: 409px;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.icones img {
+    display: block;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 89px;
+    padding: 20px 30px;
+    width: 100%;
+    height: 136px;
+    background: #E6C65D;
+    font-family: var(--font-family-texte);
+    font-size: var(--font-size);
+}
+
+
+/* /* header /* */
+
+header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/feuille.svg);
+    background-repeat: no-repeat;
+    background-position: right 47% bottom 38%;
+    background-size: 20%;
+}
+
+h1 {
+    font-family: var(--font-family-titre);
+    font-size: 7rem;
+}
+
+/* /* main /* */
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px 0px;
+    margin-bottom: 100px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family-texte);
+    font-size: 2.4rem;
+}
+
+
+footer {
+    padding: 2rem;
+    background: var(--secondary-green);
+}
+
+footer,
+.infos-footer,
+.liens-icones-footer,
+.icones-footer,
+.liens-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    font-family: var(--font-family-texte);
+}
+
+.liens-icones-footer {
+    gap: 10rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+}
+
+footer a {
+    color: var(--secondary-brown);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 393px) {
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 3px;
+        height: auto;
+    }
+
+    .b {
+        width: 45px;
+        height: auto;
+    }
+
+    .c {
+        width: 70px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .icones {
+        margin-top: 50px;
+    }
+
+    header {
+        background-size: 130px;
+        background-position: right 42% bottom 35%;
+        height: 20vh;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        width: 30vw;
+    }
+
+    .card {
+        font-size: 1.7rem;
+    }
+
+
+    .infos-footer {
+        display: none;
+    }
+
+    .liens-footer {
+        font-size: 1.3rem;
+
+    }
+
+    .liens-icones-footer {
+        gap: 2.5rem;
+    }
+}
